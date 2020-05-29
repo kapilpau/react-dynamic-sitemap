@@ -1,0 +1,19 @@
+{
+  "name": "react-dynamic-sitemap",
+  "version": "1.0.0",
+  "description": "Dynamic sitemap component for react-router",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/kapilpau/react-dynamic-sitemap.git"
+  },
+  "author": "Kapil Pau",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kapilpau/react-dynamic-sitemap/issues"
+  },
+  "homepage": "https://github.com/kapilpau/react-dynamic-sitemap#readme"
+}
