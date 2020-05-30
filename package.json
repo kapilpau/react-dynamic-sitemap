@@ -4,16 +4,35 @@
   "description": "Dynamic sitemap component for react-router",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/.bin/babel src --out-file index.js"
   },
   "repository": {
     "type": "git",
-    "url": "github.com/kapilpau/react-dynamic-sitemap.git"
+    "url": "git+https://github.com/kapilpau/react-dynamic-sitemap.git"
   },
   "author": "Kapil Pau",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/kapilpau/react-dynamic-sitemap/issues"
   },
-  "homepage": "https://github.com/kapilpau/react-dynamic-sitemap#readme"
+  "homepage": "https://github.com/kapilpau/react-dynamic-sitemap#readme",
+  "peerDependencies": {
+    "react": "^16.13.1",
+    "xmlbuilder": "^15.1.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "eslint ./"
+    }
+  },
+  "dependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.1",
+    "@babel/preset-env": "^7.10.1",
+    "@babel/preset-react": "^7.10.1",
+    "husky": "^4.2.5",
+    "react": "^16.13.1",
+    "xmlbuilder": "^15.1.1"
+  }
 }
