@@ -7,6 +7,8 @@ exports["default"] = Sitemap;
 
 var _react = _interopRequireDefault(require("react"));
 
+var _propTypes = _interopRequireDefault(require("prop-types"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 var builder = require("xmlbuilder");
@@ -39,3 +41,8 @@ function Sitemap(props) {
 		}
 	}, sitemap()));
 }
+
+Sitemap.propTypes = {
+	prettify: _propTypes["default"].bool,
+	routes: _propTypes["default"].object
+};
