@@ -11,8 +11,6 @@ This component will scan through your React Router and dynamically generate your
 npm i react-dynamic-sitemap
 ```
 
-View a demo [here](http://quizzy.hardair.co.uk/sitemap)
-
 ## Usage
 
 You should already have a router that looks somthing like this:
