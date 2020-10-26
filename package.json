@@ -1,6 +1,6 @@
 {
   "name": "react-dynamic-sitemap",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Dynamic sitemap component for react-router",
   "main": "index.js",
   "scripts": {
@@ -27,18 +27,18 @@
     }
   },
   "dependencies": {
-    "@babel/cli": "^7.10.1",
-    "@babel/core": "^7.10.1",
-    "@babel/preset-env": "^7.10.1",
-    "@babel/preset-react": "^7.10.1",
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.1",
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.1.0",
-    "husky": "^4.2.5",
+    "eslint": "^7.12.0",
+    "husky": "^4.3.0",
     "prop-types": "^15.7.2",
-    "react": "^16.13.1",
+    "react": "^16.14.0",
     "xmlbuilder": "^15.1.1"
   },
   "devDependencies": {
-    "eslint-plugin-react": "^7.20.0"
+    "eslint-plugin-react": "^7.21.5"
   }
 }
