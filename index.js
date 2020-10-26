@@ -14,7 +14,18 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "d
 var builder = require("xmlbuilder");
 
 function Sitemap(props) {
-	var hostname = window.location.protocol + "//" + window.location.hostname;
+	var host, protocol = "";
+	var renderType = "server";
+	if (props.hostname)
+		host = props.hostname;
+	if (props.protocol)
+		protocol = props.protocol;
+	if (typeof window !== "undefined" && window) {
+		renderType = "client";
+		host = window.location.hostname;
+		protocol = window.location.protocol;
+	}
+	var hostname = protocol + "//" + host;
 	var Routes = props.routes;
 
 	var sitemap = function sitemap() {
@@ -34,15 +45,17 @@ function Sitemap(props) {
 			pretty: props.prettify
 		});
 	};
-
-	return /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement("div", {
-		style: {
-			whiteSpace: "pre-wrap"
-		}
-	}, sitemap()));
+	if (renderType === "client")
+		return /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement("div", {
+			style: {
+				whiteSpace: "pre-wrap"
+			}
+		}, sitemap()));
+	else
+		return sitemap();
 }
 
 Sitemap.propTypes = {
 	prettify: _propTypes["default"].bool,
-	routes: _propTypes["default"].object
+	routes: _propTypes["default"].function
 };
