@@ -51,3 +51,4 @@ Finally add the following to all of your routes:
 | sitemapIndex | true/false (default: false) | If you want the route to appear on the sitemap then set to true|
 | priority      | 0-1 (default: 0) | Set to a value between 0 and 1, used by search engines |
 | changefreq    | always, hourly, daily, weekly, monthly, yearly, never (default: never) | Frequency that the page is changed, used by search engines |
+| slugs | Array of JSON objects to populate slugs with. For the following route: `www.example.com/article/:id`, in order to populate it with values `foo` and `bar`, you will need to pass the value `[{id: "foo"}, {id: "bar"}]` | For dynamic URLs, to populate the urls, rather than have slugs appear in your sitemap |
