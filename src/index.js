@@ -46,5 +46,8 @@ export default function Sitemap(props) {
 
 Sitemap.propTypes = {
 	prettify: PropTypes.bool,
-	routes: PropTypes.object
+	routes: PropTypes.oneOfType([
+		PropTypes.object,
+		PropTypes.func
+	])
 };
