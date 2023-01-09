@@ -8,7 +8,7 @@ export default function Sitemap(props) {
 	const Routes = props.routes;
 
 	const sitemap = () => {
-		let paths = Routes(props).props.children;
+		let paths = Routes(props)?.props?.children;
 		if (!paths || !Array.isArray(paths)) return null;
 		
 		let xml = builder.create("urlset", {encoding: "utf-8"}).att("xmlns", "http://www.sitemaps.org/schemas/sitemap/0.9");
