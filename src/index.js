@@ -9,6 +9,8 @@ export default function Sitemap(props) {
 
 	const sitemap = () => {
 		let paths = Routes(props).props.children;
+		if (!paths || !Array.isArray(paths)) return null;
+		
 		let xml = builder.create("urlset", {encoding: "utf-8"}).att("xmlns", "http://www.sitemaps.org/schemas/sitemap/0.9");
 		paths.forEach(function (path) {
 			const slugs = path.props.slugs || [{}];
