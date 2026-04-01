@@ -1,5 +1,11 @@
 # React Dynamic Sitemap
 
+**Outrank**
+
+Get traffic and outrank competitors with Backlinks & SEO-optimised content while you sleep! I've been keeping a close eye on this new tool and it seems to be gaining a lot of traction and delivering great results. [Try it now!](https://outrank.so/?via=react-dynamic-sitemap)
+
+[![image](https://github.com/user-attachments/assets/14c0f4c0-aad0-4d2d-8a14-6edad232a4dc)](https://outrank.so/?via=react-dynamic-sitemap)
+
 #### Never have to worry about updating your sitemap again!
 
 This component will scan through your React Router and dynamically generate your sitemap
